@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="182fcfac-909d-41b2-a9e1-f6810097e686" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Radio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/RadioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/currentStation.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/defaultVolume.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/maxVolume.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/minVolume.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/nextStation.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/prevStation.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/range.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,8 +61,8 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.shouldSetVolume">
-    <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RadioTest.setVolume">
+    <configuration name="RadioTest.MaxVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW-9" />
       <extension name="coverage">
         <pattern>
@@ -62,28 +72,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioTest.lowerThenZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HW-9" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
-      <option name="METHOD_NAME" value="lowerThenZero" />
+      <option name="METHOD_NAME" value="MaxVolumeTest(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.moreThenNine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.MinVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW-9" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +88,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
-      <option name="METHOD_NAME" value="moreThenNine" />
+      <option name="METHOD_NAME" value="MinVolumeTest(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.defaultVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW-9" />
       <extension name="coverage">
         <pattern>
@@ -109,13 +104,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetStation" />
+      <option name="METHOD_NAME" value="defaultVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.setCurrentStationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW-9" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +120,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetVolume" />
+      <option name="METHOD_NAME" value="setCurrentStationTest(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.setVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW-9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
+      <option name="METHOD_NAME" value="setVolume(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RadioTest.shouldSetVolume" />
-        <item itemvalue="JUnit.RadioTest" />
-        <item itemvalue="JUnit.RadioTest.moreThenNine" />
-        <item itemvalue="JUnit.RadioTest.lowerThenZero" />
-        <item itemvalue="JUnit.RadioTest.shouldSetStation" />
+        <item itemvalue="JUnit.RadioTest.setVolume" />
+        <item itemvalue="JUnit.RadioTest.MinVolumeTest" />
+        <item itemvalue="JUnit.RadioTest.MaxVolumeTest" />
+        <item itemvalue="JUnit.RadioTest.defaultVolume" />
+        <item itemvalue="JUnit.RadioTest.setCurrentStationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +166,11 @@
       <workItem from="1659542635149" duration="2230000" />
       <workItem from="1659551560779" duration="4681000" />
       <workItem from="1659557741559" duration="12000" />
+      <workItem from="1659869368111" duration="1260000" />
+      <workItem from="1659883542391" duration="226000" />
+      <workItem from="1659884723994" duration="3598000" />
+      <workItem from="1659896259047" duration="2747000" />
+      <workItem from="1659899367538" duration="7696000" />
     </task>
     <servers />
   </component>
