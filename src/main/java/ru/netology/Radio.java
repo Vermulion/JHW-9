@@ -1,55 +1,112 @@
 package ru.netology;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Radio {
+
+    //Radio Stations Set
+    private int stationsRange = 10; // Range of available stations
+    private int minStation = 0;
+    private int maxStation = 9;
     private int currentStation;
 
-    public int getCurrentStation() {
-        return currentStation;
+//    public Radio() {
+//
+//    }
+
+    public Radio(int stationsRange) {
+        this.stationsRange = stationsRange;
+        this.maxStation = minStation + stationsRange - 1;
     }
 
-    public void setCurrentStation(int newCurrentStation){
-    if (newCurrentStation < 0) {
-        newCurrentStation = 9;
-    }
-    if (newCurrentStation > 9) {
-        newCurrentStation = 0;
-    }
+
+//    public int getCurrentStation() {
+//        return currentStation;
+//    }
+//
+//    public int getMinStation() {
+//        return minStation;
+//    }
+//
+//    public int getMaxStation() {
+//        return maxStation;
+//    }
+//
+//    public int getStationsRange() {
+//        return stationsRange;
+//    }
+
+    public void setCurrentStation(int newCurrentStation) {
+        if (newCurrentStation < minStation) {
+            newCurrentStation = maxStation;
+        }
+        if (newCurrentStation > maxStation) {
+            newCurrentStation = minStation;
+        }
         currentStation = newCurrentStation;
     }
 
     public void switchNext() {
-        int next = currentStation + 1;
-        setCurrentStation(next);
+        if (currentStation == maxStation) {
+            currentStation = minStation;
+        } else {
+            currentStation++;
+        }
     }
 
     public void switchPrev() {
-        int prev = currentStation - 1;
-        setCurrentStation(prev);
+        if (currentStation == minStation) {
+            currentStation = maxStation;
+        } else {
+            currentStation--;
+        }
     }
+
+    // Radio volume set
 
     private int currentVolume;
+    private int minVolume = 0;
+    private int maxVolume = 100;
 
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
 
-    public void setCurrentVolume(int newCurrentVolume){
-        if (newCurrentVolume < 0) {
+//    public int getCurrentVolume() {
+//        return currentVolume;
+//    }
+//
+//    public int getMinVolume() {
+//        return minVolume;
+//    }
+//
+//    public int getMaxVolume() {
+//        return maxVolume;
+//    }
+
+    public void setCurrentVolume(int newCurrentVolume) {
+        if (newCurrentVolume < minVolume) {
             return;
         }
-        if (newCurrentVolume > 10) {
+        if (newCurrentVolume > maxVolume) {
             return;
         }
         currentVolume = newCurrentVolume;
     }
 
     public void turnUpVolume() {
-        int turnUp = currentVolume + 1;
-        setCurrentVolume(turnUp);
+        if (currentVolume == maxVolume) {
+            return;
+        }
+        currentVolume += 1;
     }
 
     public void turnDownVolume() {
-        int turnDown = currentVolume - 1;
-        setCurrentVolume(turnDown);
+        if (currentVolume == minVolume) {
+            return;
+        }
+        currentVolume -= 1;
     }
 }
