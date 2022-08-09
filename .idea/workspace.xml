@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="182fcfac-909d-41b2-a9e1-f6810097e686" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/currentStation.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/defaultVolume.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/maxVolume.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/minVolume.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/nextStation.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/prevStation.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/range.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Radio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +45,19 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_directory_selection&quot;: &quot;D:/JAVA/HW-9/src/test/java&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean test" />
+      <command value="mvn compile" />
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.setVolume">
-    <configuration name="RadioTest.MaxVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RadioTest">
+    <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW-9" />
       <extension name="coverage">
         <pattern>
@@ -72,8 +67,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.RadioTest" />
-      <option name="METHOD_NAME" value="MaxVolumeTest(int,int)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RadioTest" />
         <item itemvalue="JUnit.RadioTest.setVolume" />
-        <item itemvalue="JUnit.RadioTest.MinVolumeTest" />
-        <item itemvalue="JUnit.RadioTest.MaxVolumeTest" />
-        <item itemvalue="JUnit.RadioTest.defaultVolume" />
         <item itemvalue="JUnit.RadioTest.setCurrentStationTest" />
+        <item itemvalue="JUnit.RadioTest.defaultVolume" />
+        <item itemvalue="JUnit.RadioTest.MinVolumeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +165,8 @@
       <workItem from="1659884723994" duration="3598000" />
       <workItem from="1659896259047" duration="2747000" />
       <workItem from="1659899367538" duration="7696000" />
+      <workItem from="1659991232990" duration="1124000" />
+      <workItem from="1660017134196" duration="2802000" />
     </task>
     <servers />
   </component>
